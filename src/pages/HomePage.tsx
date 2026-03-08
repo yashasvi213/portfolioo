@@ -11,6 +11,13 @@ import {
 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Navbar } from '@/components/layout/Navbar';
+import event1Image from '@/asset/event-1.svg';
+import event2Image from '@/asset/event-2.svg';
+import event3Image from '@/asset/event-3.svg';
+import event4Image from '@/asset/event-4.svg';
+import event5Image from '@/asset/event-5.svg';
+import event6Image from '@/asset/event-6.svg';
+import profileMainImage from '@/asset/profile-main.svg';
 
 const contactLinks = [
   { label: 'yashasvii045@gmail.com', icon: Mail, href: 'mailto:yashasvii045@gmail.com' },
@@ -102,7 +109,7 @@ const achievements = [
   'Certifications: McKinsey Forward Program, TensorFlow, DeepLearning.ai Machine Learning.',
 ];
 
-const gallery = ['/assets/event-1.svg', '/assets/event-2.svg', '/assets/event-3.svg', '/assets/event-4.svg', '/assets/event-5.svg', '/assets/event-6.svg'];
+const gallery = [event1Image, event2Image, event3Image, event4Image, event5Image, event6Image];
 
 const container = {
   hidden: { opacity: 0, y: 50 },
@@ -156,7 +163,7 @@ export function HomePage() {
             </div>
           </div>
           <div className="rounded-3xl border border-pink-300/70 bg-white/80 p-4 shadow-[0_20px_60px_rgba(244,114,182,0.25)]">
-            <img alt="Profile" className="h-[430px] w-full rounded-2xl object-cover" src="/assets/profile-main.svg" />
+            <img alt="Profile" className="h-[430px] w-full rounded-2xl object-cover" src={profileMainImage} />
           </div>
         </motion.section>
 
