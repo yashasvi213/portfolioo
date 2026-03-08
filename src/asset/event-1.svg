@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#ffe4e6"/>
+      <stop offset="100%" stop-color="#fde68a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g)"/>
+  <text x="50%" y="48%" text-anchor="middle" font-family="Inter, Arial" font-size="56" fill="#9f1239">Event 1</text>
+  <text x="50%" y="58%" text-anchor="middle" font-family="Inter, Arial" font-size="30" fill="#7c2d12">Replace with your image in /public/assets</text>
+</svg>
