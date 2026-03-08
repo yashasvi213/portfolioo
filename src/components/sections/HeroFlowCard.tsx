@@ -1,4 +1,4 @@
-import ReactFlow, { Background, Controls, MiniMap, Node, Edge } from 'reactflow';
+import ReactFlow, { Background, Controls, Edge, MiniMap, Node } from 'reactflow';
 import 'reactflow/dist/style.css';
 
 const nodes: Node[] = [
@@ -16,9 +16,9 @@ const edges: Edge[] = [
 
 export function HeroFlowCard() {
   return (
-    <article className="rounded-3xl border border-violet-300/20 bg-[#18153e]/80 p-4">
-      <h3 className="mb-3 text-lg font-semibold text-violet-200">Build Flow (React Flow)</h3>
-      <div className="h-56 overflow-hidden rounded-2xl border border-white/10 bg-slate-950/60">
+    <article className="rounded-3xl border border-fuchsia-200/25 bg-[#2d1644]/80 p-4">
+      <h3 className="mb-3 text-lg font-semibold text-pink-100">Build Flow (React Flow)</h3>
+      <div className="h-56 overflow-hidden rounded-2xl border border-white/15 bg-[#1e1030]/85">
         <ReactFlow edges={edges} fitView nodes={nodes}>
           <MiniMap pannable zoomable />
           <Controls />

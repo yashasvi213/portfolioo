@@ -8,18 +8,18 @@ const data = [
   { skill: 'UI', score: 89 }
 ];
 
-const color = scaleLinear<string>().domain([70, 95]).range(['#7c3aed', '#22d3ee']);
+const color = scaleLinear<string>().domain([70, 95]).range(['#c084fc', '#f472b6']);
 
 export function HeroSkillChart() {
   return (
-    <article className="rounded-3xl border border-cyan-300/20 bg-[#15133a]/80 p-4">
-      <h3 className="mb-3 text-lg font-semibold text-cyan-200">Skill Snapshot (D3 + Recharts)</h3>
+    <article className="rounded-3xl border border-violet-200/25 bg-[#31194b]/80 p-4">
+      <h3 className="mb-3 text-lg font-semibold text-violet-100">Skill Snapshot (D3 + Recharts)</h3>
       <div className="h-56">
         <ResponsiveContainer>
           <BarChart data={data}>
-            <XAxis dataKey="skill" stroke="#cbd5e1" />
-            <YAxis stroke="#cbd5e1" />
-            <Tooltip contentStyle={{ background: '#0f172a', borderRadius: 12, border: '1px solid #334155' }} />
+            <XAxis dataKey="skill" stroke="#f3e8ff" />
+            <YAxis stroke="#f3e8ff" />
+            <Tooltip contentStyle={{ background: '#251237', borderRadius: 12, border: '1px solid #7e22ce', color: '#faf5ff' }} />
             <Bar dataKey="score" radius={[10, 10, 0, 0]}>
               {data.map((entry) => (
                 <Cell fill={color(entry.score)} key={entry.skill} />

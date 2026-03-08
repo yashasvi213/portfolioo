@@ -10,20 +10,20 @@ const config: Config = {
     },
     extend: {
       colors: {
-        border: 'hsl(247 26% 20%)',
-        background: 'hsl(235 44% 11%)',
-        foreground: 'hsl(240 12% 96%)',
+        border: 'hsl(289 22% 30%)',
+        background: 'hsl(282 43% 14%)',
+        foreground: 'hsl(300 20% 97%)',
         primary: {
-          DEFAULT: 'hsl(188 95% 52%)',
-          foreground: 'hsl(236 45% 8%)'
+          DEFAULT: 'hsl(322 88% 70%)',
+          foreground: 'hsl(300 20% 97%)'
         },
         secondary: {
-          DEFAULT: 'hsl(260 95% 66%)',
+          DEFAULT: 'hsl(274 72% 72%)',
           foreground: 'hsl(240 12% 96%)'
         }
       },
       boxShadow: {
-        glow: '0 0 60px rgba(56,189,248,.35)'
+        glow: '0 0 60px rgba(236, 72, 153, .35)'
       }
     }
   },
