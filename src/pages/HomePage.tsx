@@ -116,18 +116,18 @@ const container = {
 function SectionTitle({ title, accent, subtitle }: { title: string; accent: string; subtitle?: string }) {
   return (
     <div className="mb-12 text-center">
-      <h2 className="text-4xl font-bold text-white md:text-6xl">
-        {title} <span className="bg-gradient-to-r from-fuchsia-400 to-violet-500 bg-clip-text text-transparent">{accent}</span>
+      <h2 className="text-4xl font-bold text-rose-900 md:text-6xl">
+        {title} <span className="bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">{accent}</span>
       </h2>
-      <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-fuchsia-500" />
-      {subtitle ? <p className="mx-auto mt-6 max-w-3xl text-xl text-slate-400">{subtitle}</p> : null}
+      <div className="mx-auto mt-4 h-1 w-24 rounded-full bg-pink-500" />
+      {subtitle ? <p className="mx-auto mt-6 max-w-3xl text-xl text-rose-700/80">{subtitle}</p> : null}
     </div>
   );
 }
 
 export function HomePage() {
   return (
-    <main className="min-h-screen pb-20 text-white">
+    <main className="min-h-screen pb-20 text-rose-900">
       <Navbar />
 
       <div className="mx-auto max-w-7xl px-6">
@@ -139,23 +139,23 @@ export function HomePage() {
           transition={{ duration: 0.7 }}
         >
           <div>
-            <p className="mb-4 inline-flex rounded-full border border-fuchsia-500/30 bg-fuchsia-500/10 px-4 py-2 text-sm text-fuchsia-300">
+            <p className="mb-4 inline-flex rounded-full border border-pink-400/40 bg-pink-100/80 px-4 py-2 text-sm text-pink-700">
               Portfolio • Software Engineer
             </p>
             <h1 className="text-5xl font-extrabold leading-tight md:text-7xl">
-              Yashasvi <span className="bg-gradient-to-r from-fuchsia-400 to-violet-500 bg-clip-text text-transparent">Sharma</span>
+              Yashasvi <span className="bg-gradient-to-r from-pink-500 to-rose-500 bg-clip-text text-transparent">Sharma</span>
             </h1>
-            <p className="mt-6 max-w-xl text-xl text-slate-300">Software developer focused on large-scale systems, AI tools, and cloud-native product engineering.</p>
+            <p className="mt-6 max-w-xl text-xl text-rose-800/90">Software developer focused on large-scale systems, AI tools, and cloud-native product engineering.</p>
             <div className="mt-6 flex flex-wrap gap-3">
               {contactLinks.map((item) => (
-                <a className="inline-flex items-center gap-2 rounded-full border border-fuchsia-500/30 bg-[#07142b]/75 px-4 py-2 text-slate-200 transition hover:-translate-y-1 hover:border-fuchsia-400" href={item.href} key={item.label}>
-                  <item.icon className="text-fuchsia-400" size={16} />
+                <a className="inline-flex items-center gap-2 rounded-full border border-pink-300/60 bg-white/70 px-4 py-2 text-rose-900/85 transition hover:-translate-y-1 hover:border-pink-500" href={item.href} key={item.label}>
+                  <item.icon className="text-pink-500" size={16} />
                   {item.label}
                 </a>
               ))}
             </div>
           </div>
-          <div className="rounded-3xl border border-fuchsia-400/30 bg-[#07142b]/70 p-4 shadow-[0_0_60px_rgba(168,85,247,0.15)]">
+          <div className="rounded-3xl border border-pink-300/70 bg-white/80 p-4 shadow-[0_20px_60px_rgba(244,114,182,0.25)]">
             <img alt="Profile" className="h-[430px] w-full rounded-2xl object-cover" src="/assets/profile-main.svg" />
           </div>
         </motion.section>
@@ -163,33 +163,33 @@ export function HomePage() {
         <motion.section className="py-20" id="about" initial="hidden" viewport={{ once: true, amount: 0.25 }} whileInView="show" variants={container}>
           <SectionTitle accent="Me" subtitle="Engineering student with a passion for web development, embedded systems, and technical leadership." title="About" />
           <div className="grid gap-6 md:grid-cols-2">
-            <article className="rounded-2xl border border-fuchsia-400/30 bg-[#07142b]/75 p-8">
-              <h3 className="mb-4 flex items-center gap-2 text-2xl font-semibold text-white">
-                <MapPin className="text-fuchsia-400" size={18} /> Personal Info
+            <article className="rounded-2xl border border-pink-300/60 bg-white/70 p-8">
+              <h3 className="mb-4 flex items-center gap-2 text-2xl font-semibold text-rose-900">
+                <MapPin className="text-pink-500" size={18} /> Personal Info
               </h3>
-              <ul className="space-y-2 text-lg text-slate-300">
+              <ul className="space-y-2 text-lg text-rose-800/90">
                 <li>
-                  <strong className="text-white">Name:</strong> Yashasvi Sharma
+                  <strong className="text-rose-900">Name:</strong> Yashasvi Sharma
                 </li>
                 <li>
-                  <strong className="text-white">Location:</strong> Indore, India
+                  <strong className="text-rose-900">Location:</strong> Indore, India
                 </li>
                 <li>
-                  <strong className="text-white">Email:</strong> yashasvii045@gmail.com
+                  <strong className="text-rose-900">Email:</strong> yashasvii045@gmail.com
                 </li>
                 <li>
-                  <strong className="text-white">LeetCode:</strong> 1576
+                  <strong className="text-rose-900">LeetCode:</strong> 1576
                 </li>
               </ul>
             </article>
-            <article className="rounded-2xl border border-fuchsia-400/30 bg-[#07142b]/75 p-8">
-              <h3 className="mb-4 flex items-center gap-2 text-2xl font-semibold text-white">
-                <GraduationCap className="text-fuchsia-400" size={18} /> Education
+            <article className="rounded-2xl border border-pink-300/60 bg-white/70 p-8">
+              <h3 className="mb-4 flex items-center gap-2 text-2xl font-semibold text-rose-900">
+                <GraduationCap className="text-pink-500" size={18} /> Education
               </h3>
-              <div className="rounded-xl border border-fuchsia-500/25 bg-slate-900/40 p-4">
-                <p className="text-lg font-semibold text-white">Bachelor of Engineering (B.E.) in Information Technology</p>
-                <p className="mt-1 text-slate-300">Institute of Engineering and Technology, DAVV, Indore, MP</p>
-                <p className="mt-1 text-slate-400">2023 - 2027 • CGPA: 8.89</p>
+              <div className="rounded-xl border border-pink-200/80 bg-pink-50/80 p-4">
+                <p className="text-lg font-semibold text-rose-900">Bachelor of Engineering (B.E.) in Information Technology</p>
+                <p className="mt-1 text-rose-800/90">Institute of Engineering and Technology, DAVV, Indore, MP</p>
+                <p className="mt-1 text-rose-700/80">2023 - 2027 • CGPA: 8.89</p>
               </div>
             </article>
           </div>
@@ -199,12 +199,12 @@ export function HomePage() {
           <SectionTitle accent="Skills" subtitle="A diverse set of technical and core computer-science skills developed through education, projects, and internships." title="Technical" />
           <div className="grid gap-6 md:grid-cols-3">
             {skillGroups.map((group) => (
-              <motion.article className="rounded-2xl border border-fuchsia-500/35 bg-[#07142b]/75 p-8" key={group.title} whileHover={{ y: -6 }}>
+              <motion.article className="rounded-2xl border border-pink-300/60 bg-white/70 p-8" key={group.title} whileHover={{ y: -6 }}>
                 <h3 className="mb-4 text-2xl font-semibold">{group.title}</h3>
-                <ul className="space-y-2 text-slate-300">
+                <ul className="space-y-2 text-rose-800/90">
                   {group.skills.map((skill) => (
                     <li className="flex items-center gap-2" key={skill}>
-                      <span className="h-2 w-2 rounded-full bg-fuchsia-500" />
+                      <span className="h-2 w-2 rounded-full bg-pink-500" />
                       {skill}
                     </li>
                   ))}
@@ -218,19 +218,19 @@ export function HomePage() {
           <SectionTitle accent="Projects" subtitle="A collection of projects spanning AI workflows, civic automation, and scalable full-stack systems." title="Featured" />
           <div className="grid gap-6 md:grid-cols-3">
             {projects.map((project) => (
-              <motion.article className="rounded-2xl border border-fuchsia-500/30 bg-[#07142b]/75 p-6" key={project.title} whileHover={{ y: -8 }}>
-                <p className="text-sm text-fuchsia-300">{project.period}</p>
-                <h3 className="mt-1 text-2xl font-semibold text-white">{project.title}</h3>
-                <p className="mt-2 text-sm text-slate-400">{project.stack}</p>
-                <ul className="mt-4 space-y-2 text-slate-300">
+              <motion.article className="rounded-2xl border border-pink-300/60 bg-white/70 p-6" key={project.title} whileHover={{ y: -8 }}>
+                <p className="text-sm text-pink-700">{project.period}</p>
+                <h3 className="mt-1 text-2xl font-semibold text-rose-900">{project.title}</h3>
+                <p className="mt-2 text-sm text-rose-700/80">{project.stack}</p>
+                <ul className="mt-4 space-y-2 text-rose-800/90">
                   {project.points.map((point) => (
                     <li className="flex items-start gap-2" key={point}>
-                      <span className="mt-2 h-2 w-2 rounded-full bg-fuchsia-500" />
+                      <span className="mt-2 h-2 w-2 rounded-full bg-pink-500" />
                       {point}
                     </li>
                   ))}
                 </ul>
-                <a className="mt-4 inline-flex items-center gap-1 text-fuchsia-300 hover:text-fuchsia-200" href="#">
+                <a className="mt-4 inline-flex items-center gap-1 text-pink-700 hover:text-pink-800" href="#">
                   View links <ExternalLink size={14} />
                 </a>
               </motion.article>
@@ -242,17 +242,17 @@ export function HomePage() {
           <SectionTitle accent="Experience" subtitle="Professional journey and impact in software engineering and AI agent development." title="Work" />
           <div className="grid gap-6 md:grid-cols-2">
             {experiences.map((item) => (
-              <article className="rounded-2xl border border-fuchsia-500/30 bg-[#07142b]/75 p-8" key={item.company}>
-                <p className="mb-3 flex items-center gap-2 text-fuchsia-300">
+              <article className="rounded-2xl border border-pink-300/60 bg-white/70 p-8" key={item.company}>
+                <p className="mb-3 flex items-center gap-2 text-pink-700">
                   <BriefcaseBusiness size={16} /> {item.period}
                 </p>
-                <h3 className="text-2xl font-semibold text-white">{item.company}</h3>
-                <p className="text-slate-400">{item.location}</p>
-                <p className="mt-2 font-medium text-fuchsia-300">{item.role}</p>
-                <ul className="mt-4 space-y-2 text-slate-300">
+                <h3 className="text-2xl font-semibold text-rose-900">{item.company}</h3>
+                <p className="text-rose-700/80">{item.location}</p>
+                <p className="mt-2 font-medium text-pink-700">{item.role}</p>
+                <ul className="mt-4 space-y-2 text-rose-800/90">
                   {item.points.map((detail) => (
                     <li className="flex items-start gap-2" key={detail}>
-                      <span className="mt-2 h-2 w-2 rounded-full bg-fuchsia-500" />
+                      <span className="mt-2 h-2 w-2 rounded-full bg-pink-500" />
                       {detail}
                     </li>
                   ))}
@@ -266,9 +266,9 @@ export function HomePage() {
           <SectionTitle accent="Achievements" subtitle="Recognition, open-source impact, and competitive milestones." title="My" />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {achievements.map((item) => (
-              <motion.article className="rounded-2xl border border-fuchsia-500/30 bg-[#07142b]/75 p-6" key={item} whileHover={{ scale: 1.02 }}>
-                <Trophy className="mb-4 text-yellow-400" size={28} />
-                <p className="text-lg font-medium text-white">{item}</p>
+              <motion.article className="rounded-2xl border border-pink-300/60 bg-white/70 p-6" key={item} whileHover={{ scale: 1.02 }}>
+                <Trophy className="mb-4 text-amber-500" size={28} />
+                <p className="text-lg font-medium text-rose-900">{item}</p>
               </motion.article>
             ))}
           </div>
@@ -278,7 +278,7 @@ export function HomePage() {
           <SectionTitle accent="Gallery" subtitle="Highlights from hackathons, competitions, and team moments." title="Event" />
           <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
             {gallery.map((image, index) => (
-              <motion.figure className="overflow-hidden rounded-xl border border-fuchsia-500/25 bg-[#07142b]/70" key={image} whileHover={{ y: -6 }}>
+              <motion.figure className="overflow-hidden rounded-xl border border-pink-200/80 bg-white/75" key={image} whileHover={{ y: -6 }}>
                 <img alt={`Event ${index + 1}`} className="h-52 w-full object-cover" src={image} />
               </motion.figure>
             ))}
@@ -286,20 +286,20 @@ export function HomePage() {
         </motion.section>
 
 
-        <motion.section className="rounded-3xl border border-fuchsia-500/30 bg-[#07142b]/75 p-8" id="contact" initial="hidden" viewport={{ once: true, amount: 0.25 }} whileInView="show" variants={container}>
+        <motion.section className="rounded-3xl border border-pink-300/60 bg-white/70 p-8" id="contact" initial="hidden" viewport={{ once: true, amount: 0.25 }} whileInView="show" variants={container}>
           <SectionTitle accent="Touch" title="Get In" />
-          <div className="grid gap-4 text-lg text-slate-200 sm:grid-cols-2">
-            <a className="inline-flex items-center gap-2 hover:text-fuchsia-300" href="mailto:yashasvii045@gmail.com">
-              <Mail className="text-fuchsia-400" size={16} /> yashasvii045@gmail.com
+          <div className="grid gap-4 text-lg text-rose-900/85 sm:grid-cols-2">
+            <a className="inline-flex items-center gap-2 hover:text-pink-700" href="mailto:yashasvii045@gmail.com">
+              <Mail className="text-pink-500" size={16} /> yashasvii045@gmail.com
             </a>
             <p className="inline-flex items-center gap-2">
-              <MapPin className="text-fuchsia-400" size={16} /> Indore, India
+              <MapPin className="text-pink-500" size={16} /> Indore, India
             </p>
             <p className="inline-flex items-center gap-2">
-              <Code2 className="text-fuchsia-400" size={16} /> LeetCode: 1576
+              <Code2 className="text-pink-500" size={16} /> LeetCode: 1576
             </p>
             <p className="inline-flex items-center gap-2">
-              <Github className="text-fuchsia-400" size={16} /> yashasvisharma-iet
+              <Github className="text-pink-500" size={16} /> yashasvisharma-iet
             </p>
           </div>
         </motion.section>
