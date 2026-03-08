@@ -1,23 +1,18 @@
-import { Moon } from 'lucide-react';
-
-const navItems = ['Home', 'About', 'Skills', 'Projects', 'Experience', 'Achievements', 'Gallery', 'Contact'];
+const navItems = ['Home', 'About', 'Experience', 'Skills', 'Projects', 'Gallery', 'Contact'];
 
 export function Navbar() {
   return (
-    <header className="mx-auto flex w-full max-w-7xl items-center justify-between py-8 text-sm text-purple-100/90">
-      <div className="text-3xl font-bold tracking-tight">
-        Anurag<span className="text-secondary">Tiwari</span>
+    <header className="sticky top-0 z-20 mx-auto flex w-full items-center justify-between py-6 text-sm backdrop-blur">
+      <div className="text-2xl font-bold tracking-tight text-slate-900">
+        your<span className="text-rose-500">portfolio</span>
       </div>
-      <nav className="hidden gap-7 font-medium md:flex">
+      <nav className="hidden gap-6 font-medium text-slate-600 md:flex">
         {navItems.map((item) => (
-          <a className="transition hover:text-primary" href={`#${item.toLowerCase()}`} key={item}>
+          <a className="transition hover:text-rose-500" href={`#${item.toLowerCase()}`} key={item}>
             {item}
           </a>
         ))}
       </nav>
-      <button className="rounded-full border border-white/20 p-2 hover:bg-white/10" type="button">
-        <Moon size={18} />
-      </button>
     </header>
   );
 }
